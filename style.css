@@ -14,7 +14,7 @@
     --cor4: #3E46DE;
     --cor5: #0F0091;
 
-    --font-padrao: Arial;
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
     --font-destaque: 'Bebas Neue', cursive;
     --font-android: cursive;
 }
