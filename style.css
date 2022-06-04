@@ -24,6 +24,40 @@ body{
     font-family: var(--font-padrao);
 }
 
+
+
+.buttom{
+    position: relative;
+    bottom: 28px;
+    width: 60px;
+    height: 30px;
+    border-radius: 25px;
+    box-shadow: 0 0 2.5px 0 rgb(0 0 0 / 40%);
+    cursor: pointer;
+    background-color: var(--cor0);
+    left: 10px;
+}
+
+
+.ball{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 31px;
+    height: 100%;
+    border-radius: 50%;
+    transform: left 1s;
+}
+
+.ballT{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 31px;
+    height: 100%;
+    border-radius: 50%;
+    transform: left 1s;
+}
 header{
     background-image: linear-gradient(to bottom, var(--cor4), var(--cor5));
     background-color: var(--cor4);
@@ -70,7 +104,13 @@ main p {
     text-indent: 30px;
     line-height: 2em;
     font-size: 1em;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor4);
 }
 
 main strong{
@@ -78,6 +118,18 @@ main strong{
     font-weight: bold;
     background-color: var(--cor0);
 }
+
+main > p > a:hover{
+    text-decoration: underline;
+    background-color: var(--cor1);
+}
+
+.maintable{
+    line-height: 2em;
+    font-size: 1em;
+    margin-bottom: 50px;
+}
+
 
 main > a{
     margin-top: 50px;
@@ -98,6 +150,13 @@ main > a:hover{
     color: var(--cor5);
 }
 
+main h1{
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--cor3);
+    font-size: 1.9em;
+    margin-bottom: 20px;
+}
 
 main h2{
     font-family: var(--font-android);
@@ -107,7 +166,43 @@ main h2{
     background-image: linear-gradient(to right, var(--cor0), transparent);
 }
 
-footer{
+nav{
+    padding: 10px;
+    background-color: var(--cor5);
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.5);
+}
+
+nav > a{
+    border-radius: 5px;
+    color: var(--cor0);
+    padding: 10px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    font-weight: bold;
+}
+
+nav > a:hover{
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+
+div.video{
+    background-color: var(--cor5);
+    margin: 0 -20px 30px -20px;
+    padding: 10px;
+    padding-bottom: 56.5%;
+    position: relative;
+}
+
+div > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.footerWelcome{
     width: 100%;
     background-color: var(--cor5);
     color: var(--cor1);
@@ -118,6 +213,44 @@ footer{
     position: fixed;
     bottom:0;
     left:0;
+}
+
+
+.divul{
+    margin: 15px 0;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+
+footer{
+    width: 100%;
+    background-color: var(--cor5);
+    color: var(--cor1);
+    text-align: center;
+    font-family: var(--font-padrao);
+    padding: 20px;
+    font-size: 0.8em;
+}
+
+table, th, td{
+    border:1px solid black;
+  }
+
+table{
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 10px;
+}
+
+.table{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 footer a{
